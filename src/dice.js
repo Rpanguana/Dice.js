@@ -7,6 +7,7 @@ class Die {
     var sum = 0;
 
     if (arguments.length== 2){
+
       this.probabilities = arguments[1];
       for (let i = 0; i < probabilities.length; i += 1) {
         if (probabilities[i] <= 0) {
@@ -58,21 +59,7 @@ class DiceFactory extends Die{
   }
 }
 
-// let die6 = new Die(6)
-// die6.roll()
-
-// let die20 = new Die(20)
-// die20.roll()
-
-// console.log(die6.value) // this would print a number between 1 and 6 inclusive
-// console.log(die20.value) 
-// let dieDodgy6 = new Die(6);
-// dieDodgy6.roll();
-// dieDodgy6.weightedDice();
-// dieDodgy6.setProbabilities([1,1,1,1,1,2])
-
-// console.log(dieDodgy6.value) 
-let dice2= new Die(3);
+let dice2= new Die(6);
 dice2.setProbabilities([1,3,6]);
 dice2.roll();
 //dice2.setProbabilities([1,1,1,1,1,2]);
